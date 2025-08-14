@@ -7,7 +7,7 @@ Body {
 .navbar {
     width: 100%;
     background-color: #777;
-    position: fixed;
+
     overflow: hidden;
 }
 .nav-links{
@@ -44,20 +44,24 @@ Body {
     border-radius: 350px;
     padding-right: 5rem;
 }
-.project-card {
- background-color: white;
- text-align: center;
- height: 15rem;
- width: 50%;
- padding: 2rem;
- margin: 1,5rem;
- box-shadow: 0 10px 6px -6px #777;
-}
 
 .project-container {
     display: flex;
     gap: 10px;
 }
+
+.project-card {
+ background-color: white;
+ border-radius: 10px;
+ text-align: center;
+ height: 15rem;
+ width: 50%;
+ padding: 2rem;
+ margin: 1.5rem;
+ box-shadow: 0 10px 6px -6px #777;
+}
+
+
 
 .project-card h4 {
     text-align: center;
@@ -71,4 +75,21 @@ button {
     background: none;
     border: none;
 
+}
+
+.experience-container {
+    display: flex;
+}
+
+.exp-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-left: 5rem;
+}
+
+.experience {
+    margin-left:5rem;
+    padding: 2rem;
 }
