@@ -2,18 +2,26 @@ Body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
+}
+html{
+        scroll-behavior: smooth;
 }
 .navbar {
-    width: 100%;
     background-color: #777;
-
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
 }
-.nav-links{
+.brand {
+    margin-left: 5rem;
+}
+.nav-links {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 3rem;
+    margin-right: 5rem;
+
 }
 
 .nav-links a {
@@ -23,7 +31,8 @@ Body {
 }
 
 .nav-links a:hover {
-    color: #8FBC8F;
+    color: azure;
+    width: 18px;
 }
 
 #home {
