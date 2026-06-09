@@ -16,9 +16,10 @@
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
-             <li><a href="#contact">Contact</a></li>
+             <li><a href="#socials">Socials</a></li>
 
         </ul>
     </nav>
@@ -38,6 +39,45 @@
                 <img src="assets/hero_setup.jpg" alt="laptop setup">
             </div>
 
+        </section>
+
+        <section id="about">
+            <div class="conatiner">
+                <div class="section-title">ABout Me!</div>
+            </div>
+            <p class="about-text">
+                 I'm a beginner developer with a passion for creating things on the web.
+                  Every day is a new opportunity to learn something new, build something cool,
+                 and grow my skills. I love the challenge of turning ideas into reality through code.
+            </p>
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="about-icon"><img src="./assets/code-xml.png">
+                    </div>
+                    <h3>Learning</h3>
+                   <p>
+                    Constantly learning and exploring new technologies and best practices</p> 
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon"><img src="./assets/rocket.png"></div>
+                    <h3>Building</h3>
+                    <p>
+                        Creating projects to apply what I learn and solve real problems
+
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon"><img src="./assets/book-open.png"></div>
+                    <h3>Growing</h3>
+                    <p>
+                        Embracing challenges and improving with every line of code
+
+                    </p>
+                </div>
+
+            </div>
         </section>
 
         <section id="projects">
@@ -77,22 +117,24 @@
                     </p>
                      <div class="btn-container">
                             <button class="btn" onclick="window.open('./assets/nelson_resume.pdf')">Full Resume</button>
+                            <button class="btn" onclick="window.open('https://mail.google.com/', '_blank')">Email Me</button>    
                     </div>             
                 </div>
 
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="btn-container">
+        <section id="socials">
+            <h2>Socials</h2>
+            <div class="btn-scl-container">
             <img src="./assets/linkedin.png" alt="my linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/nelson-dominique/'"/>
             <img src="./assets/github.png" alt="my github profile" class="icon" onclick="location.href='https://github.com/dominique-nelson1018/'"/>
-            <img src="./assets/email.png" alt="email me @gmail" class="icon" onclick="location.href='https://mail.google.com/'"/>
+            <!-- <img src="./assets/email.png" alt="email me @gmail" class="icon" onclick="location.href='https://mail.google.com/'"/> -->
             </div>
         </section>  
         <footer>            
-            <p class="copyright">Dominique Nelson 2025</p>
+             <p>Made with <span class="heart">♥</span> by a beginner developer</p>
+            <small>© <span id="year"></span> All rights reserved.</small>
         </footer>
 
     </main>
