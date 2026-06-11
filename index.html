@@ -9,34 +9,43 @@
 </head>
 <body>
     <header>
-    <nav class="navbar">
-        <div class="brand">
-            <h2>DOMINIQUE NELSON</h2>
-            <p>Application Analyst | Aspiring Dev </p>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-             <li><a href="#socials">Socials</a></li>
+<nav id="navbar">
+    <div class="container nav-inner">
+      <button class="nav-logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">Portfolio</button>
 
-        </ul>
-    </nav>
+      <ul class="nav-links">
+        <li><button onclick="scrollTo('about')">About</button></li>
+        <li><button onclick="scrollTo('skills')">Skills</button></li>
+        <li><button onclick="scrollTo('projects')">Projects</button></li>
+        <li><button onclick="scrollTo('contact')">Contact</button></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu">
+      <ul class="mobile-menu-list">
+        <li><button onclick="scrollTo('about');closeMobileMenu()">About</button></li>
+        <li><button onclick="scrollTo('skills');closeMobileMenu()">Skills</button></li>
+        <li><button onclick="scrollTo('projects');closeMobileMenu()">Projects</button></li>
+        <li><button onclick="scrollTo('contact');closeMobileMenu()">Contact</button></li>
+      </ul>
+    </div>
+  </nav>
     </header>
     <main>
 
-        <section id="home">
-            <div class="home-container">
-                <p>Hello World!</p>
-                <h1>My name is Dominique</h1> 
-                <p>
-                I am an Application Analyst for Florida Virtual School and and aspiring IOS and/or Android app developer. My biggest interest is in UX/UI design, but my skills are currently rudimentary at best.. Until I am ready to share my portfolio with future employers, I will be using it as my very own and first digital diary. Buckle up and please enjoy the ride!
-                </p>
-
+        <section id="hero">
+            <div class="hero-container">
+                <h1 class="hero-title">Hi, My name is <span class="highlight">Dominique</span></h1> 
+                <p class="hero-subtitle">Application Analyst | Aspiring Dev</p>
             </div>
-            <div class="home-card">
-                <img src="assets/hero_setup.jpg" alt="laptop setup">
+            <div class="hero-icons">
+                <a class="icon-links" href="https://github.com/dominique-nelson1018" target="_blank" rel="noopener"><img src="./assets/github.png"></a>
+                <a class="icon-links" href="https://www.linkedin.com/in/nelson-dominique/" target="_blank" rel="noopener"><img src="./assets/linkedin.png"></a>
+                <a class="icon-links" href="https://mailto:your.dnelson701@gmail.com" target="_blank" rel="noopener"><img src="./assets/email.png"></a>
             </div>
 
         </section>
