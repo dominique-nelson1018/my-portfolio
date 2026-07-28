@@ -37,78 +37,98 @@
     </header>
     <main>
 
-        <section id="hero">
-            <div class="hero-container">
-                <h1 class="hero-title">Hi, My name is <span class="highlight">Dominique</span></h1> 
-                <p class="hero-subtitle">Application Analyst | Aspiring Dev</p>
-            </div>
-            <div class="hero-icons">
-                <a class="icon-links" href="https://github.com/dominique-nelson1018" target="_blank" rel="noopener"><img src="./assets/github.png"></a>
-                <a class="icon-links" href="https://www.linkedin.com/in/nelson-dominique/" target="_blank" rel="noopener"><img src="./assets/linkedin.png"></a>
-                <a class="icon-links" href="https://mailto:your.dnelson701@gmail.com" target="_blank" rel="noopener"><img src="./assets/email.png"></a>
-            </div>
+<section id="hero">
+    <div class="hero-content">
+      <div class="hero-avatar">👋</div>
 
-        </section>
+      <h1 class="hero-title">
+        Hi, I'm <span class="highlight">Dominique</span>
+      </h1>
 
-        <section id="about">
-            <div class="conatiner">
-                <div class="section-title">ABout Me!</div>
-            </div>
-            <p class="about-text">
-                 I'm a beginner developer with a passion for creating things on the web.
-                  Every day is a new opportunity to learn something new, build something cool,
-                 and grow my skills. I love the challenge of turning ideas into reality through code.
-            </p>
-            <div class="about-cards">
-                <div class="about-card">
-                    <div class="about-icon"><img src="./assets/code-xml.png">
-                    </div>
-                    <h3>Learning</h3>
-                   <p>
-                    Constantly learning and exploring new technologies and best practices</p> 
-                </div>
+      <p class="hero-subtitle">Aspiring Developer | Building &amp; Learning</p>
 
-                <div class="about-card">
-                    <div class="about-icon"><img src="./assets/rocket.png"></div>
-                    <h3>Building</h3>
-                    <p>
-                        Creating projects to apply what I learn and solve real problems
+      <div class="hero-icons">
+        <!-- GitHub -->
+        <a href="https://github.com/dominique-nelson1018" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/nelson-dominique/" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <!-- Email -->
+        <a href="mailto:dnelson701@gmail.com" class="icon-link" aria-label="Email">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
 
-                    </p>
-                </div>
+    <button class="scroll-down" onclick="scrollTo('about')" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </section>
+    <!-- ABOUT ME SECTION -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle" style="margin-bottom:2rem"></p>
 
-                <div class="about-card">
-                    <div class="about-icon"><img src="./assets/book-open.png"></div>
-                    <h3>Growing</h3>
-                    <p>
-                        Embracing challenges and improving with every line of code
+      <p class="about-text">
+        I'm a beginner developer with a passion for creating things on the web.
+        Every day is a new opportunity to learn something new, build something cool,
+        and grow my skills. I love the challenge of turning ideas into reality through code.
+      </p>
 
-                    </p>
-                </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-icon blue">
+            <!-- Code icon -->
+            <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Learning</h3>
+          <p>Constantly exploring new technologies and best practices</p>
+        </div>
 
-            </div>
-        </section>
+        <div class="about-card">
+          <div class="about-icon purple">
+            <!-- Rocket icon -->
+            <svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          </div>
+          <h3>Building</h3>
+          <p>Creating projects to apply what I learn and solve real problems</p>
+        </div>
 
-        <section id="projects">
-            <h2> Projects</h2>
-            <div class="project-container">
-                <div class="project-card">
-                <h4>Project One</h4>
-                <p>First real, worthy project will go here. I will continue to add more as I go.</p>
-                </div>
+        <div class="about-card">
+          <div class="about-icon green">
+            <!-- Book icon -->
+            <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Growing</h3>
+          <p>Embracing challenges and improving with every line of code</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <div class="project-card">
-                    <h4>Project Two</h4>
-                    <p>Second real, worthy project will go here. I will continue to add more as I go.</p>
-                </div>
+    <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Growing every day</p>
 
-                <div class="project-card">
-                    <h4>Project Three</h4>
-                    <p>Third real, worthy project will go here. I will continue to add more as I go.</p>
-                </div>
-            </div>
+      <div class="skills-list" id="skills-list">
+        <!-- Skills are injected by JS below -->
+      </div>
 
-        </section>
+      <p class="skills-quote">"I may be a beginner, but I'm committed to continuous improvement!"</p>
+    </div>
+  </section>
+
+
 
         <section id="experience">
             <h2>Experience</h2>
@@ -129,7 +149,6 @@
                             <button class="btn" onclick="window.open('https://mail.google.com/', '_blank')">Email Me</button>    
                     </div>             
                 </div>
-
             </div>
         </section>
 
@@ -147,6 +166,6 @@
         </footer>
 
     </main>
-
+    <script src="script.js"></script>
 </body>
 </html>
